@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    --primary_color: white;
+    --orange: #EB6E4B;
+    font-family: 'Nunito', sans-serif;
+}
+html.dark{
+    --primary_color: rgb(224, 224, 224);
+    --orange: #EB6E4B;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-image: url('./img/038512_r0_1140.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    width: 100vw;
+}
+div.black{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+div.img{
+    height: 20vw;
+    max-width: 200px;
+    width: 20vw;
+    max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.middle h2{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+div.middle h2.main{
+    margin-bottom: 1rem;
+}
+div.middle{
+    background-color: var(--primary_color);
+    width: 85vw;
+    height: 70%;
+    max-width: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 450px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+div.middle div.tomorrow{
+    margin-top:1rem;
+    border-top: 1px solid black;
+    display: flex;
+    flex-basis: 10%;
+    height: 10%;
+    width: 90%;
+    justify-self: flex-end;
+    align-items: center;
+    padding-top: 0.5rem;
+    justify-content: center;
+}
+div.middle div.tomorrow h2.main{
+    margin-bottom: 0;
+    margin-right: 2%;
+}
+div.middle div.tomorrow h2.temp{
+    margin-bottom: 0;
+    margin-right: 2%;
+}
+div.middle div.tomorrow div.img{
+    height: 3.5rem;
+    max-width: 200px;
+    width: 3.5rem;
+    max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(orientation:portrait){
+    div.img{
+        height: 20vh;
+        width: 20vh;
+    }
+}
+@media(orientation:portrait) and (max-width:375px){
+    html{
+        font-size: 14px;
+    }
+}
